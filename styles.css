@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Suranna&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.name {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    align-self: flex-end;
+    align-content: flex-end;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_image {
+    height: auto;
+    object-fit: cover;
+}
+
+.card_bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width:1120px){ 
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:1616px){
+    .name {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        align-self:normal;
+    }
+} 
