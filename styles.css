@@ -6,59 +6,65 @@
     box-sizing: border-box;
 }
 
-.container {
-    min-height: 100vh;
-    padding: 20px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+.name {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-left: 50px;
 }
 
-.name {
-    display: flex;
+.container {
     width: 100%;
-    height: 10vh;
-    align-self: flex-end;
-    align-content: flex-end;
-    justify-content: space-between;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.card_item {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    width: 500px;
 }
 
 .card_image {
-    height: auto;
     object-fit: cover;
-}
-
-.card_bottom {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 300px;
 }
 
 .price {
-    font-weight: 600;
-    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.name_snikers {
+    font-size: 18px;
 }
 
 
-@media only screen and (max-width:1120px){ 
-    .container {
+@media only screen and (max-width:803px){ 
+    .name {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .card {
         flex-direction: column;
         align-items: center;
+        /* justify-content: center; */
+    }
+
+    .card_item {
+        width: 90%;
     }
 }
-
-@media only screen and (max-width:1616px){
-    .name {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        text-align: center;
-        align-self:normal;
-    }
-} 
